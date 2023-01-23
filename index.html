@@ -1,1 +1,138 @@
-Hello World .. Website up soon ..
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Personal Website</title>
+  <style>
+    /* Add CSS styles for the layout and design of the website here */
+    body {
+      background-color: #f2f2f2;
+    }
+    header {
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    nav {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #333;
+    }
+    /* Add CSS styles for the interactive elements of the website here */
+    .button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #fff;
+      color: #333;
+    }
+    /* Add CSS styles for the responsive design of the website here */
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to my website!</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>Insert information about yourself here.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>Insert your work experience here.</li>
+        <li>You can also include your education here.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Insert information about your projects here.</li>
+        <li>You can include screenshots, links to live demos, etc.</li>
+      </ul>
+      <a href="#" class="button">View More</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="submit-form.php" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<br>
+<label for="message">Message:</label>
+<textarea id="message" name="message" required></textarea>
+<br>
+<input type="submit" value="Submit">
+</form>
+<p>You can also include your contact information here, such as your email address and social media links.</p>
+</section>
+
+  </main>
+  <footer>
+    <p>Copyright ©2022 My Personal Website</p>
+  </footer>
+  <script>
+    /* Add JavaScript code for the interactive elements of the website here */
+    // Example: toggle visibility of a specific element on button click
+    var button = document.querySelector('.button');
+    var element = document.querySelector('#extra-projects');
+    button.addEventListener('click', function() {
+      if (element.style.display === 'none') {
+        element.style.display = 'block';
+      } else {
+        element.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
