@@ -6,12 +6,10 @@ button.addEventListener('click', () => {
         localStorage.setItem("data-theme", "light");
         document.documentElement.classList.remove('dark-theme');
         console.log("Mahan - Light Mode")
-        document.getElementById("switchModeButton").innerHTML = "<i class='fa-regular fa-sun-bright'></i>"
     } else if (theme === null || theme === "light") {
         localStorage.setItem("data-theme", "dark");
         document.documentElement.classList.toggle('dark-theme');
         console.log("Mahan - Dark Mode")
-        document.getElementById("switchModeButton").innerHTML = "<i class='fa-light fa-moon'></i>"
     }
 });
 
@@ -20,11 +18,9 @@ $(document).ready(function () {
     if (theme === "dark") {
         document.documentElement.classList.toggle('dark-theme');
         console.log("Mahan - Dark Mode")
-        document.getElementById("switchModeButton").innerHTML = "<i class='fa-light fa-moon'></i>"
     } else if (theme === null || theme === "light") {
         document.documentElement.classList.remove('dark-theme');
         console.log("Mahan - Light Mode")
-        document.getElementById("switchModeButton").innerHTML = "<i class='fa-regular fa-sun-bright'></i>"
     }
 });
 
@@ -39,7 +35,6 @@ document.addEventListener("keydown", function (zEvent) {
                 localStorage.setItem("data-theme", "dark");
                 document.documentElement.classList.toggle('dark-theme');
                 console.log("Mahan - Dark Mode")
-                document.getElementById("switchModeButton").innerHTML = "<i class='fa-light fa-moon'></i>"
             }
         } else if (!darkThemeMq.matches) {
             if (theme === "light") {
@@ -47,7 +42,6 @@ document.addEventListener("keydown", function (zEvent) {
             } else {
                 localStorage.setItem("data-theme", "light");
                 document.documentElement.classList.remove('dark-theme');
-                document.getElementById("switchModeButton").innerHTML = "<i class='fa-regular fa-sun-bright'></i>"
             }
         }
     }
