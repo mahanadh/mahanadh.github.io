@@ -74,12 +74,14 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  color: var(--text-color);
 }
 
 /* Modal Content */
 .modal-content {
   position: relative;
   background-color: #fefefe;
+  color: var(--text-color);
   margin: auto;
   padding: 0;
   border: 1px solid #888;
@@ -123,7 +125,9 @@
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {padding: 2px 16px;
+    color: var(--text-color);
+}
 
 .modal-footer {
   padding: 2px 16px;
@@ -137,10 +141,15 @@
 
 .fa.fa-square{
     padding: 0;
-  width: 0px;
   font-size: 15px;
   position: relative;
   display: inline;
+}
+
+.navbarButton{
+    display: flex;
+align-items: center;
+justify-content: center;
 }
 </style>
 </head>
@@ -149,13 +158,10 @@
 
     <div class="navbar padding mt-1 rounded-xl">
         <a href="https://mahanadh.github.io/" class="navbar-brand navbar-brand-text"><img id="navbarImage" draggable="false" src="./Files/favicon.png" alt="IMG" width="45"></a>
-        <div class="navbar-nav">
-        </div>
-        <div class="navbar-nav">
-            <div id="navbarButtons">
+
+            <a href="https://medium.com/@mahanAdhikari/" target="_blank"><div class="card rounded-xl h-full"><div class="p-3 flex space-x-2 items-center overflow-hidden"><p class="normalText opacity-80">My Blogs</p></div></div></a>
                 <button id="btn" class="navbarButton switchModeButton"><i class="fa fa-square"></i></button>
             </div>
-        </div>
     </div>
 
     <section id="head">
@@ -171,7 +177,7 @@
                 </div>
                 <div class="sectionGridItem sectionGridItemRight">
                     <center>
-                        <img draggable="false" id="headAvatar" src="./Files/iconLebensraum.png" alt="IMG" class="rounded-full">
+                        <img draggable="false" id="headAvatar" src="./Files/mahan1.png" alt="IMG" class="rounded-full">
                     </center>
                 </div>
             </div>
@@ -191,9 +197,14 @@
                             </div>
                             <p class="boldText opacity-90 mt-4">Mahan Adhikari</p>
                         </center>
-                        <p class="normalText opacity-80 mt-4">I am Mahan Adhikari.</p>
-                        <p class="normalText opacity-80 mt-4">I have over four years of experience working in the tech industry.</p>
-                    </div>
+                        <p class="normalText opacity-80 mt-4">Hi! I am Mahan Adhikari.</p>
+                        <p class="normalText opacity-80 mt-4">I am currently working at CloudFactory Ltd, a US-based company and one of Nepal’s largest outsourcing firms. With two years at CloudFactory and a total experience of over three years in the IT industry, I bring a wealth of knowledge and expertise to my role. </p>
+                        <p class="normalText opacity-80 mt-4">                        
+                            My background in testing large-scale applications, particularly those based on event-driven MicroService architectures, has allowed me to grasp the fundamental concepts of programming and building automation suites. I was hired by CloudFactory not just for my testing skills but also for my ability to build automation suites from scratch, starting from architectural design and implementation, using tools such as Cypress and JavaScript. Additionally, I have hands-on experience with cloud technology, specifically AWS. </p>
+                            <p class="normalText opacity-80 mt-4">   My passion for technology and drive for continuous learning has made me an asset to my team and I am committed to delivering quality results. I am confident in my ability to work effectively in a fast-paced environment and I thrive on the challenge of solving complex problems.                            </p>
+                            <p class="normalText opacity-80 mt-4">I am always looking for new opportunities to grow and expand my skillset, and I believe that my experience and expertise would be a valuable addition to any organization. Thank you for taking the time to consider my profile and feel free to contact me if there is any collaboration possible.</p>
+
+                        </div>
                 </div>
             </div>
         </div>
