@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class=""><head><meta https-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en" class="">
+
+<head>
+    <meta https-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta https-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahan Adhikari – Software Engineer (QA)</title>
+    <title>Mahan Adhikari – Backend Engineer (Go & React)</title>
     <link rel="stylesheet" href="./Files/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="./Files/all.css" > -->
     <link href="./Files/tailwind.min.css" rel="stylesheet">
@@ -19,163 +22,196 @@
             display: inline-block;
         }
 
-/* Importing fonts from Google */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Kalam&display=swap');
+        /* Importing fonts from Google */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Kalam&display=swap');
 
 
 
-/* Socials */
+        /* Socials */
 
-.fa {
-  padding: 23px;
-  font-size: 30px;
-  width: 74px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
+        .fa {
+            padding: 23px;
+            font-size: 30px;
+            width: 74px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
 
-.fa:hover {
-    opacity: 0.7;
-}
+        .fa:hover {
+            opacity: 0.7;
+        }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
 
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
 
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  color: var(--text-color);
-}
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            color: var(--text-color);
+        }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  color: var(--text-color);
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            color: var(--text-color);
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
 
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
 
-/* The Close Button */
-.close {
-  color: rgb(0, 0, 0);
-  float: right;
-  font-size: 35px;
-  font-weight: bold;
-}
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
 
-.close:hover,
-.close:focus {
-  color: rgb(164, 114, 114);
-  text-decoration: none;
-  cursor: pointer;
-}
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
 
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
+        /* The Close Button */
+        .close {
+            color: rgb(0, 0, 0);
+            float: right;
+            font-size: 35px;
+            font-weight: bold;
+        }
 
-.modal-body {padding: 2px 16px;
-    color: var(--text-color);
-}
+        .close:hover,
+        .close:focus {
+            color: rgb(164, 114, 114);
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
 
-.navbarButton{
-    background-color: rgb(241, 240, 240);
-}
+        .modal-body {
+            padding: 2px 16px;
+            color: var(--text-color);
+        }
 
-.fa.fa-square{
-    padding: 0;
-  font-size: 15px;
-  position: relative;
-  display: inline;
-}
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
 
-.navbarButton{
-    display: flex;
-align-items: center;
-justify-content: center;
-}
+        .navbarButton {
+            background-color: rgb(241, 240, 240);
+        }
 
-.fa.fa-envelope{
-    padding: 22px;
-    width: 45px;
-}
-</style>
+        .fa.fa-square {
+            padding: 0;
+            font-size: 15px;
+            position: relative;
+            display: inline;
+        }
+
+        .navbarButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fa.fa-envelope {
+            padding: 22px;
+            width: 45px;
+        }
+    </style>
 </head>
 
 <body class="animate__animated animate__fadeIn js">
 
     <div class="navbar padding mt-1 rounded-xl">
-        <a href="https://mahanadh.github.io/" class="navbar-brand navbar-brand-text"><img id="navbarImage" draggable="false" src="./Files/mahanlogo.png" alt="IMG" width="45"></a>
+        <a href="https://mahanadh.github.io/" class="navbar-brand navbar-brand-text"><img id="navbarImage"
+                draggable="false" src="./Files/mahanlogo.png" alt="IMG" width="45"></a>
 
-            <a href="https://medium.com/@mahanAdhikari/" target="_blank"><div class="card rounded-xl h-full"><div class="p-3 flex space-x-2 items-center overflow-hidden"><p class="normalText opacity-80">My Blogs</p></div></div></a>
-                <button id="btn" class="navbarButton switchModeButton"><i class="fa fa-square"></i></button>
+        <a href="https://medium.com/@mahanAdhikari/" target="_blank">
+            <div class="card rounded-xl h-full">
+                <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                    <p class="normalText opacity-80">My Blogs</p>
+                </div>
             </div>
+        </a>
+        <button id="btn" class="navbarButton switchModeButton"><i class="fa fa-square"></i></button>
+    </div>
     </div>
 
     <section id="head">
         <div class="padding section">
             <div class="sectionGrid">
                 <div class="sectionGridItem">
-                    <p class="blackText">I’m <span class="coloredTextAnimation">Mahan</span>. I’m a Software Engineer specializing in Testing</p>
+                    <p class="blackText">I’m <span class="coloredTextAnimation">Mahan</span>. Backend Engineer
+                        specializing in Go, React & AI microservices</p>
                     &nbsp;&nbsp;
-                    <p class="boldText opacity-90" id="weatherText"><span id="weather"><span class="text-capitalize">Few Clouds of 19°C in Kathmandu, NP</span></span>
+                    <p class="boldText opacity-90" id="weatherText"><span id="weather"><span class="text-capitalize">Few
+                                Clouds of 19°C in Kathmandu, NP</span></span>
                     </p>
                     <br>
                     <button id="myBtn" class="bigButton normalText rounded-xl opacity-90">More About Me</button>
@@ -190,58 +226,69 @@ justify-content: center;
     </section>
 
 
-      <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content rounded-xl">
                 <div class="modal-body">
-                    <p class="thinText sectionTopRightText sectionTopRightTextModal rounded-xl p-2 opacity-80"><span class="close" >&times;</span></p>
+                    <p class="thinText sectionTopRightText sectionTopRightTextModal rounded-xl p-2 opacity-80"><span
+                            class="close">&times;</span></p>
                     <div id="inModal" class="p-3 mt-1 mb-1 space-x-2">
                         <center>
                             <div id="aboutMeModalAvatarContainer">
-                                <img draggable="false" id="aboutMeModalAvatar" class="rounded-full" src="./Files/niceAvatar.png" alt="IMG" width="140" height="140">
+                                <img draggable="false" id="aboutMeModalAvatar" class="rounded-full"
+                                    src="./Files/niceAvatar.png" alt="IMG" width="140" height="140">
                             </div>
                             <p class="boldText opacity-90 mt-4">Mahan Adhikari</p>
                         </center>
                         <p class="normalText opacity-80 mt-4">Hi! I am Mahan Adhikari.</p>
-                        <p class="normalText opacity-80 mt-4">I am currently working at CloudFactory Ltd, a US-based company and one of Nepal’s largest outsourcing firms. With two years at CloudFactory and a total experience of over three years in the IT industry, I bring a wealth of knowledge and expertise to my role. </p>
-                        <p class="normalText opacity-80 mt-4">                        
-                            My background in testing large-scale applications, particularly those based on event-driven MicroService architectures, has allowed me to grasp the fundamental concepts of programming and building automation suites. I was hired by CloudFactory not just for my testing skills but also for my ability to build automation suites from scratch, starting from architectural design and implementation, using tools such as Cypress and JavaScript. Additionally, I have hands-on experience with cloud technology, specifically AWS. </p>
-                            <p class="normalText opacity-80 mt-4">   My passion for technology and drive for continuous learning has made me an asset to my team and I am committed to delivering quality results. I am confident in my ability to work effectively in a fast-paced environment and I thrive on the challenge of solving complex problems.                            </p>
-                            <p class="normalText opacity-80 mt-4">I am always looking for new opportunities to grow and expand my skillset, and I believe that my experience and expertise would be a valuable addition to any organization. Thank you for taking the time to consider my profile and feel free to contact me if there is any collaboration possible.</p>
+                        <p class="normalText opacity-80 mt-4">I’m a backend-focused engineer specializing in Go and
+                            React, building AI‑integrated, event‑driven microservices on AWS and Kubernetes. My recent
+                            work centers on high‑throughput systems, resilient architectures, and observability to
+                            support millions of requests at scale.</p>
+                        <p class="normalText opacity-80 mt-4">At CloudFactory, I’ve led initiatives to design and
+                            implement microservices, define API contracts, and improve performance through profiling,
+                            caching, and asynchronous workflows. I also establish testing standards across teams,
+                            leveraging Cypress and JavaScript for robust end‑to‑end automation.</p>
+                        <p class="normalText opacity-80 mt-4">I care about clean interfaces, strong CI/CD, and
+                            measurable reliability. I’m actively exploring AI integration patterns (LLM‑assisted
+                            workflows, embeddings, and inference services) to augment backend capabilities safely and
+                            efficiently.</p>
+                        <p class="normalText opacity-80 mt-4">If you’re interested in collaborating on scalable, modern
+                            backend systems or AI‑powered services, feel free to reach out.</p>
 
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-      <script>
+    <script>
         // Get the modal
         var modal = document.getElementById("myModal");
-        
+
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
-        
+
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-        
+
         // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-          modal.style.display = "block";
+        btn.onclick = function () {
+            modal.style.display = "block";
         }
-        
+
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
+        span.onclick = function () {
             modal.style.display = "none";
-          }
         }
-        </script>
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 
     <section id="activities">
@@ -252,7 +299,8 @@ justify-content: center;
                     <a href="https://instagram.com/mahan_adh" target="_blank" class="fa fa-instagram"></a>
                     <a href="https://twitter.com/mahan_adh" target="_blank" class="fa fa-twitter"></a>
                     <a href="https://www.facebook.com/mahan.adhikari/" target="_blank" class="fa fa-facebook"></a>
-                    <a href="https://www.linkedin.com/in/mahan-adhikari-6406ba15a/" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://www.linkedin.com/in/mahan-adhikari-6406ba15a/" target="_blank"
+                        class="fa fa-linkedin"></a>
                 </div>
             </div>
         </div>
@@ -266,22 +314,30 @@ justify-content: center;
                     <a href="https://www.cloudfactory.com/" target="_blank">
                         <div class="card rounded-xl h-full">
                             <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <img draggable="false" src="./Files/cloudfactory.png" alt="IMG" class="rounded-xl" width="50" height="50">
+                                <img draggable="false" src="./Files/cloudfactory.png" alt="IMG" class="rounded-xl"
+                                    width="50" height="50">
                                 <p class="normalText ml-3 opacity-90">CloudFactory</p>
-                                <p class="thinText sectionTopRightText rounded-xl p-2 opacity-80">2 years and counting </p>
+                                <p class="thinText sectionTopRightText rounded-xl p-2 opacity-80">2 years and counting
+                                </p>
                             </div>
-                            <div class="smallText p-3 cardNoMT opacity-80">Senior Software Engineer &nbsp; &nbsp; [July 2023 to Current] </div>
-                            <div class="smallText p-3 cardNoMT opacity-80">Software Engineer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Feb 2021 to July 2023] </div>
+                            <div class="smallText p-3 cardNoMT opacity-80">Senior Software Engineer &nbsp; &nbsp; [July
+                                2023 to Current] </div>
+                            <div class="smallText p-3 cardNoMT opacity-80">Software Engineer &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Feb 2021 to July 2023] </div>
                         </div>
                     </a>
                     <a href="https://www.deerwalk.com/" target="_blank">
                         <div class="card rounded-xl h-full">
                             <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <img draggable="false" src="./Files/deerwalk.png" alt="IMG" class="rounded-xl" width="50" height="50">
-                                <p class="normalText ml-3 opacity-90">Cedar Gate Technologies(previously known as Deerwalk Inc)</p>
-                                <p class="thinText sectionTopRightText rounded-xl p-2 opacity-80">2 years 1 months &nbsp;•&nbsp;</p>
+                                <img draggable="false" src="./Files/deerwalk.png" alt="IMG" class="rounded-xl"
+                                    width="50" height="50">
+                                <p class="normalText ml-3 opacity-90">Cedar Gate Technologies(previously known as
+                                    Deerwalk Inc)</p>
+                                <p class="thinText sectionTopRightText rounded-xl p-2 opacity-80">2 years 1 months
+                                    &nbsp;•&nbsp;</p>
                             </div>
-                            <div class="smallText p-3 cardNoMT opacity-80">Associate Software Engineer &nbsp; &nbsp; [Dec 2018 to Feb 2021]</div>
+                            <div class="smallText p-3 cardNoMT opacity-80">Associate Software Engineer &nbsp; &nbsp;
+                                [Dec 2018 to Feb 2021]</div>
                         </div>
                     </a>
                 </div>
@@ -297,11 +353,13 @@ justify-content: center;
                     <a href="https://deerwalk.edu.np/DWIT/" target="_blank">
                         <div class="card rounded-xl h-full">
                             <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <img draggable="false" src="./Files/dwit.png" alt="IMG" class="rounded-xl" width="50" height="50">
+                                <img draggable="false" src="./Files/dwit.png" alt="IMG" class="rounded-xl" width="50"
+                                    height="50">
                                 <p class="normalText ml-3 opacity-90">Deerwalk Institute of Technology</p>
                                 <p class="thinText sectionTopRightText rounded-xl p-2 opacity-80">4 years </p>
                             </div>
-                            <div class="smallText p-3 cardNoMT opacity-80">Bachelors of Science in Computer Science and IT &nbsp; &nbsp; [2015 to 2019] </div>
+                            <div class="smallText p-3 cardNoMT opacity-80">Bachelors of Science in Computer Science and
+                                IT &nbsp; &nbsp; [2015 to 2019] </div>
                         </div>
                     </a>
                 </div>
@@ -309,202 +367,139 @@ justify-content: center;
         </div>
     </section>
 
-    <section id="repositories">
-        <div class="padding section">
-            <p class="boldText opacity-90">Repositories</p>
-            <div id="repositoriesGrid" class="mt-3">
-                <div class="grid grid-cols-1 gap-3 sm:gird-cols-1 md:grid-cols-3">
-                    <div class="githubCard card rounded-xl h-full">
-                        <a href="https://github.com/mahanadh/mahanadh.github.io" target="_blank">
-                        <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                            <p class="normalText opacity-90">Personal Website</p>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="githubCard card rounded-xl h-full">
-                        <a href="https://github.com/mahanadh/Contract-Testing---PACT" target="_blank">
-                        <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                            <p class="normalText opacity-90">Contract Testing</p>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="githubCard card rounded-xl h-full">
-                        <a href="https://github.com/mahanadh/Postman-Github-CI-Integration" target="_blank">
-                        <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                            <p class="normalText opacity-90">Postman Github CI Integration</p>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="githubCard card rounded-xl h-full">
-                        <a href="https://github.com/mahanadh/Cypress_Repo" target="_blank">
-                        <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                            <p class="normalText opacity-90">Cypress Introduction</p>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="githubCard card rounded-xl h-full">
-                        <a href="https://github.com/mahanadh/react_webpage" target="_blank">
-                        <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                            <p class="normalText opacity-90">Simple React Web App</p>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="githubCard card rounded-xl h-full">
-                        <a href="https://github.com/mahanadh/steganography" target="_blank">
-                        <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                            <p class="normalText opacity-90">Steganography Web App</p>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
 
-    <section id="skills">
-        <div class="padding section">
-            <p class="boldText opacity-90">Skills</p>
-            <div id="skillsGrid" class="mt-3">
-                <div class="grid grid-cols-2 gap-3 sm:gird-cols-2 md:grid-cols-4">
-                    <a href="https://javascript.com/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#EFD81D" class="flex-shrink-0 h-6 w-6 rounded-lg">
-                                    <path d="M0 0v512h512V0H0zm274.286 397.714c0 49.84-29.44 74.137-72.057 74.137-38.492 0-60.835-19.931-72.172-43.988l39.177-23.714c7.555 13.405 13.292 24.742 29.783 24.742 13.714 0 24.983-6.182 24.983-30.24V237.714h50.286v160zm113.543 72.995c-44.675 0-73.543-20.16-87.635-48L339.429 400c10.285 16.846 23.714 28.069 47.428 28.069 19.932 0 31.509-8.823 31.509-22.572 0-16.491-11.92-22.331-33.92-32l-12.023-5.166c-34.72-14.765-57.737-33.325-57.737-72.514 0-36.08 27.485-62.434 70.445-62.434 30.595 0 52.572 9.508 68.4 37.348L416 294.857c-8.251-14.777-17.143-20.571-30.926-20.571-14.091 0-23.028 8.937-23.028 20.571 0 14.434 8.937 20.274 29.554 29.212l12.023 5.154c40.903 17.531 63.931 35.428 63.931 75.611.012 43.315-34.011 65.875-79.725 65.875z"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">JavaScript</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://mongodb.com/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg class="flex-shrink-0 h-6 w-6 rounded-lg" xmlns="https://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
-                                    <path fill="#FFF" d="M12.546,24l-0.639-0.218c0,0,0.078-3.257-1.091-3.491c-0.779-0.904,0.125-38.338,2.93-0.125c0,0-0.966,0.483-1.138,1.309C12.422,22.286,12.546,24,12.546,24L12.546,24z"></path>
-                                    <path fill="#A6A385" d="M12.546,24l-0.639-0.218c0,0,0.078-3.257-1.091-3.491c-0.779-0.904,0.125-38.338,2.93-0.125c0,0-0.966,0.483-1.138,1.309C12.422,22.286,12.546,24,12.546,24L12.546,24z"></path>
-                                    <path fill="#FFF" d="M12.889,20.852c0,0,5.595-3.678,4.286-11.33c-1.262-5.563-4.239-7.387-4.566-8.088c-0.358-0.499-0.701-1.371-0.701-1.371l0.234,15.475C12.141,15.553,11.658,20.275,12.889,20.852L12.889,20.852z"></path>
-                                    <path fill="#499D4A" d="M12.889,20.852c0,0,5.595-3.678,4.286-11.33c-1.262-5.563-4.239-7.387-4.566-8.088c-0.358-0.499-0.701-1.371-0.701-1.371l0.234,15.475C12.141,15.553,11.658,20.275,12.889,20.852L12.889,20.852z"></path>
-                                    <path fill="#FFF" d="M11.58,21.054c0,0-5.252-3.584-4.94-9.896c0.296-6.312,4.005-9.413,4.722-9.974C11.83,0.686,11.845,0.499,11.876,0c0.327,0.701,0.265,10.488,0.312,11.641C12.328,16.083,11.939,20.213,11.58,21.054z"></path>
-                                    <path fill="#58AA50" d="M11.58,21.054c0,0-5.252-3.584-4.94-9.896c0.296-6.312,4.005-9.413,4.722-9.974C11.83,0.686,11.845,0.499,11.876,0c0.327,0.701,0.265,10.488,0.312,11.641C12.328,16.083,11.939,20.213,11.58,21.054z"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">MongoDB</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.typescriptlang.org/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
-                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
-                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">TypeScript</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.cypress.io/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
-                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
-                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">Cypress</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.aws.com/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
-                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
-                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">AWS Services</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.docker.com/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
-                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
-                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">Docker</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.mysql.com/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
-                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
-                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">SQL</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.java.com/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
-                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
-                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">Java</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.cypress.io/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
-                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
-                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">Manual Testing</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.docs.pact.io/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
-                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
-                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">Contract Testing - Pact</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.postman.com/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
-                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
-                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">API Automation - Postman</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://go.dev/" target="_blank">
-                        <div class="card rounded-xl h-full">
-                            <div class="p-3 flex space-x-2 items-center overflow-hidden">
-                                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
-                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
-                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
-                                </svg> -->
-                                <p class="normalText ml-3 opacity-80">GoLang</p>
-                            </div>
-                        </div>
-                    </a>
+    <div id="skillsGrid" class="mt-3">
+        <div class="grid grid-cols-2 gap-3 sm:gird-cols-2 md:grid-cols-4">
+            <a href="https://go.dev/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">Golang</p>
+                    </div>
                 </div>
+            </a>
+            <a href="https://react.dev/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">React</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://javascript.com/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">JavaScript</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://kubernetes.io/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">Kubernetes</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://aws.amazon.com/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">AWS Services</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.docker.com/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">Docker</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://microservices.io/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">Microservices Architecture</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://openai.com/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">AI Integration</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.cypress.io/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">Cypress</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">Testing Standards</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.postgresql.org/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">SQL (PostgreSQL/MySQL)</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://tailwindcss.com/" target="_blank">
+                <div class="card rounded-xl h-full">
+                    <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                        <p class="normalText ml-3 opacity-80">UI (Tailwind/Bootstrap)</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
+                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
+                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
+                                </svg> -->
+    <!-- <p class="normalText ml-3 opacity-80">Manual Testing</p> -->
+    </div>
+    </div>
+    </a>
+    <!-- <a href="https://www.docs.pact.io/" target="_blank">
+        <div class="card rounded-xl h-full">
+            <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
+                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
+                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
+                                </svg> -->
+    <!-- <p class="normalText ml-3 opacity-80">Contract Testing - Pact</p>
             </div>
         </div>
+    </a> -->
+    <!-- <a href="https://www.postman.com/" target="_blank">
+        <div class="card rounded-xl h-full">
+            <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
+                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
+                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
+                                </svg> -->
+    <!-- <p class="normalText ml-3 opacity-80">API Automation - Postman</p>
+            </div>
+        </div>
+    </a> -->
+    <!-- <a href="https://go.dev/" target="_blank">
+        <div class="card rounded-xl h-full">
+            <div class="p-3 flex space-x-2 items-center overflow-hidden">
+                <!-- <svg xmlns="https://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 rounded-lg" viewBox="0 0 128 128">
+                                    <rect width="99.67" height="73.67" x="22.67" y="47" fill="#fff"></rect>
+                                    <path fill="#007acc" d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z" data-name="original"></path>
+                                </svg> -->
+    <!-- <p class="normalText ml-3 opacity-80">GoLang</p>
+            </div>
+        </div>
+    </a> -->
+    </div>
+    </div>
+    </div>
     </section>
 
     <section id="footer">
@@ -515,30 +510,34 @@ justify-content: center;
             </div>
             <div class="footerRight">
                 <span class="normalText textCard rounded-xl mr-1 opacity-80">
-                    <button><a href="mailto:mahan2054@gmail.com"><i class="fa fa-envelope" style="font-size: large;"></i>Contact Me</a></button>
+                    <button><a href="mailto:mahan2054@gmail.com"><i class="fa fa-envelope"
+                                style="font-size: large;"></i>Contact Me</a></button>
                 </span>
             </div>
-        </div>  
+        </div>
     </section>
 
     <style>
         .arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
     </style>
 
-<button onclick="topFunction()" id="goTop" class="normalText transition-shadow  opacity-90" style="display: none;">
-    <i class="arrow up"></i>
-</button>
+    <button onclick="topFunction()" id="goTop" class="normalText transition-shadow  opacity-90" style="display: none;">
+        <i class="arrow up"></i>
+    </button>
 
-<script src="./Files/goTop.js"></script>
-<script src="./Files/darkMode.js"></script>
+    <script src="./Files/goTop.js"></script>
+    <script src="./Files/darkMode.js"></script>
 
-</body></html>
+</body>
+
+</html>
